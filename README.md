@@ -3,7 +3,7 @@
 This is a fun and interactive web-based animation project built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
-http://http://13.239.2.80/
+http://13.239.2.80/
 
 ## ☁️ Deployment
 The project is deployed on AWS using:
