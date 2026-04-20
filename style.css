@@ -1,0 +1,104 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e, #000000);
+    color: white;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: relative;
+}
+.game-ui {
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+    width: 200px;
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+
+    border: 2px solid rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid cyan;
+    box-shadow: 0 0 15px cyan;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+
+    margin-left: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(45deg, #ff0057, #ff7b00);
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,0,100,0.5);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255,0,100,0.8);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+#status {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Animations */
+@keyframes move {
+    0% {left: 0;}
+    50% {left: 200px; background: orange;}
+    100% {left: -200px;}
+}
+
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(2); background: lime;}
+    100% {transform: scale(1);}
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg);}
+    50% {transform: skew(40deg); background: cyan;}
+    100% {transform: skew(0deg);}
+}
